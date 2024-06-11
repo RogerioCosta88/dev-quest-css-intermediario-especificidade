@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Quest: Especificidade e Efeito Cascata</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container-cascata {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<h1>Especificidade</h1>
+<div class="container-especificidade">
+    <h2>Container Especificidade</h2>
+    <p>A <em>especificidade</em> funciona diferente do <em>efeito cascata.</em></p>
+    <p>Na <em>especificidade</em>, alguns seletores tem prioridade em relação a outros.</p>
+    <p>Quanto mais <em>especifico</em> for o seletor, maior será sua prioridade.</p>
+    <p style="background-color: brown;" id="meu-paragrafo">Sendo assim, na <em>especificidade</em>, não importa a ordem em que os <em>seletores</em> são aplicados, porque a <em>especificidade</em> dos seletores que irá determinar qual o <em>seletor</em> tem mais <em>peso</em>.</p>
+    <p>O seletor <strong>p</strong> é o menos especifico. O <em>seletor</em> <strong>id</strong> tem o maior grau de especificidade, mas o <strong>CSS</strong> <strong>inline</strong> tem a maior especificidade possível.</p>
+    <p>A regra <strong>!important</strong> sobrescreve todos os níveis, mas não é recomendado utilizar, assim como, o <strong>CSS</strong> <strong>inline</strong> e <strong>interno</strong>.</p>
+</div>
+    
+</body>
+</html>
